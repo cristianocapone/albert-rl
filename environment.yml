@@ -1,0 +1,29 @@
+name: albert-rl  # for AllLegs_def.ipynb (PPO + GAE)
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - pip
+
+  # Scientific computing
+  - numpy>=1.24
+  - matplotlib>=3.7
+
+  # Jupyter
+  - jupyter
+  - ipykernel
+  - tqdm
+
+  - pip:
+      # PyTorch — CPU build (change to cu121 for CUDA 12.1)
+      - torch>=2.1.0
+      - torchvision
+
+      # MuJoCo physics engine + Python bindings
+      - mujoco>=3.1.0
+
+      # Video rendering (wraps ffmpeg/imageio)
+      - mediapy>=1.1.2

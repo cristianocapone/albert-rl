@@ -1,0 +1,17 @@
+# Large media — not tracked
+movies/
+plots/
+
+# Intermediate checkpoints — keep only best
+models/nn_ppo_ddtheta_ep*.pth
+
+# Build artifacts
+export/
+upload/
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
